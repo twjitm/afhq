@@ -1,0 +1,99 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="textview_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:background">#5566ff00</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="textview_content_style">
+        <item name="android:textColor">#bb000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="widget_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/textColorPrimaryDark</item>
+    </style>
+
+    <style name="MyProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_medium_white</item>
+        <item name="android:minWidth">60dip</item>
+        <item name="android:maxWidth">60dip</item>
+        <item name="android:minHeight">60dip</item>
+        <item name="android:maxHeight">60dip</item>
+    </style>
+
+    <style name="MyProgressBar_rizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal</item>
+    </style>
+
+    <!-- 用户密码输入框风格 -->
+    <style name="login_edit_text">
+        <item name="android:layout_height">45dip</item>
+        <item name="android:background">@drawable/target_input_bg</item>
+        <item name="android:ems">20</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">8dip</item>
+        <item name="android:padding">10dip</item>
+    </style>
+    <!-- 用户密码输入框风格 -->
+    <style name="logout_edit_text">
+        <item name="android:layout_height">45dip</item>
+        <item name="android:background">@drawable/button_input_bg</item>
+        <item name="android:ems">20</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">8dip</item>
+        <item name="android:padding">10dip</item>
+    </style>
+    
+    <style name="logout_app_text">
+        <item name="android:layout_height">45dip</item>
+        <item name="android:background">@drawable/button_app_bg</item>
+        <item name="android:ems">20</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:drawablePadding">8dip</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+  <style name="CircularProgressBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="stroke_width">5dp</item>
+        <item name="progress" format="float">0.1</item>
+        <item name="progress_color">#ffff4444</item>
+        <item name="progress_background_color">#ffffffff</item>
+        <item name="marker_visible">true</item>
+        <item name="thumb_visible">true</item>
+    </style>
+    
+    <style name="CircularProgressBarLight">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="stroke_width">5dp</item>
+        <item name="progress" format="float">0.1</item>
+        <item name="progress_color">#ffff4444</item>
+        <item name="progress_background_color">#aaa</item>
+        <item name="marker_visible">true</item>
+        <item name="thumb_visible">true</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:text="主界面" />
+ <com.startapp.android.publish.banner.Banner 
+          android:id="@+id/startAppBanner"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"/>
+    
+    <com.itheima.mobileguard.ui.FocusedTextView 
+        android:focusableInTouchMode="true"
+        android:ellipsize="marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="我是您的黑马小护卫，时刻保护您的手机安全，哈哈哈，呱呱呱。嘎嘎嘎"
+        />
+    
+    <GridView
+        android:listSelector="@android:color/transparent"
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="8dip" />
+
+</LinearLayout>

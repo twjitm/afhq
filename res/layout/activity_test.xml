@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.example.afhq"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/titleId"
+        layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleId"
+        android:background="#2bc0ac"
+        android:gravity="clip_horizontal" >
+
+        <com.example.afhq.widget.RoundProgressBar
+            android:id="@+id/roundProgressBar2"
+            android:layout_width="180dip"
+            android:layout_height="180dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#2bc0ac"
+            android_custom:roundColor="@android:color/white"
+            android_custom:roundProgressColor="@color/battery_view_text_light"
+            android_custom:roundWidth="6dip"
+            android_custom:textColor="@android:color/white"
+            android_custom:textSize="25sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:background="#2bc0ac"
+        android:gravity="center"
+        android:text="上次体检时间:20:20"
+        android:textColor="@color/black" />
+ <RelativeLayout
+      android:id="@+id/re_button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2bc0ac"
+        android:layout_below="@id/textView1"
+        android:gravity="clip_horizontal" >
+    <Button
+        android:id="@+id/button1"
+        style="@style/logout_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+         android:layout_marginLeft="100dip"
+        android:layout_marginRight="100dip"
+        android:text="一键体检" />
+</RelativeLayout>
+    <!-- 具体其他功能和扫描项目页面 -->
+
+    <FrameLayout
+        android:id="@+id/activity_test_frag"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/re_button1" >
+    </FrameLayout>
+
+</RelativeLayout>

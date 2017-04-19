@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.afhq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@color/app_main_color"
+        android:gravity="center"
+        android:text="设置中心"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 自定义属性的写法 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dip"
+                android:background="@drawable/list_selector"
+                android:clickable="true"
+                android:onClick="changeBgStyle" >
+
+                <TextView
+                    android:id="@+id/tv_change_titlestyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:text="归属地提示框风格"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_change_titlestyle"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="2dip"
+                    android:text="半透明"
+                    android:textColor="#88000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/jiantou_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_below="@+id/tv_title_style"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/list_devider" >
+                </View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="268dp"
+                android:background="@drawable/list_selector"
+                android:clickable="true" >
+
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:ems="10" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/mdcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/desc"
+                    android:ems="10" />
+
+                <Button
+                    android:id="@+id/savemdcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/mdcode"
+                    android:text="添加" />
+
+                <Button
+                    android:id="@+id/delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/savemdcode"
+                    android:layout_alignBottom="@+id/savemdcode"
+                    android:layout_centerHorizontal="true"
+                    android:text="删除" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/savemdcode"
+                    android:layout_marginTop="34dp"
+                    android:text="——------------------------------" />
+
+                <Button
+                    android:id="@+id/delete_sowf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView1"
+                    android:layout_marginLeft="19dp"
+                    android:text="后台卸载软件" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

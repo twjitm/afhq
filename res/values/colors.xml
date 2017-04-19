@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 安全等级保护颜色 -->
+    <color name="app_main_color">#2bc0ac</color>
+    <color name="app_main_color_danger">#D44802</color>
+    <color name="app_main_color_low">#EB9E17</color>
+    
+    
+    <color name="adblock_list_head_txt_color">#ff545f6b</color>
+    <color name="adblock_scan_color1">#ff545f6b</color>
+    <color name="adblock_scan_color2">#ff35a10d</color>
+    <color name="adblock_counter_yellow">#fffffc00</color>
+    <color name="adblock_color_tmp1">#ff633800</color>
+    <color name="adblock_color_tmp2">#ffb3c7d1</color>
+    <color name="text_firewall_item_on">#ff478f00</color>
+    <color name="text_firewall_item_off">#ff98a6a3</color>
+    <color name="text_switcher_item_on">#ff2daf00</color>
+    <color name="text_switcher_item_off">#ff98a6a3</color>
+    <color name="dialog_line_up">#ffc0ced2</color>
+    <color name="dialog_line_down">#ffffffff</color>
+    <color name="dialog_text">#ff646464</color>
+    <color name="net_float_red">#40ff5a00</color>
+    <color name="net_float_green">#4568e200</color>
+    <color name="clear_box_toast_color">#ff1ceb00</color>
+    <color name="barcode_recognize_result_bg">#aa000000</color>
+    <color name="barcode_select_picture_text">#ff7f8683</color>
+    <color name="barcode_bottom_cancel_text">#ff8a8d8e</color>
+    <color name="call_show_text_weak">#ffbfbfbf</color>
+    <color name="call_show_text_black">#ff000000</color>
+    <color name="call_show_text_highlight">#ff6cb923</color>
+    <color name="call_show_text_achive_collect">#ff9197a5</color>
+    <color name="call_show_mark_text_pressed">#ffffffff</color>
+    <color name="call_show_mark_text_normal">#ff000000</color>
+    <color name="call_show_toast_text_highlight">#fffff000</color>
+    <color name="call_show_bg_white">#ffffffff</color>
+    <color name="call_show_cache_hint">#ffffffff</color>
+    <color name="call_show_button_divider">#ff4b4b4b</color>
+    <color name="disk_second_text">#ff838383</color>
+    <color name="main_change_bg">#ffb2b6bd</color>
+    <color name="vertical_line">#ffb1b3b4</color>
+    <color name="privacy_icon_text">#ff686868</color>
+    <color name="privacy_short_cut_top_line">#ffa3aeb6</color>
+    <color name="privacy_short_cut_bottom_line">#ffe2e5e6</color>
+    <color name="translucent_bg">#00000000</color>
+    <color name="disk_no_open">#fffcff00</color>
+    <color name="menu_about_express">#ff282d3a</color>
+    <color name="menu_about_link">#ff0058aa</color>
+    <color name="menu_about_copyright">#ff898e9b</color>
+    <color name="btn_text_pressed">#ff945700</color>
+    <color name="btn_text_dialog">#ff0ca800</color>
+    <color name="btn_black_disable">#ffa5da90</color>
+<!--     <color name="white">#ffffffff</color>
+ -->    <color name="btn_shadow">#ffffffff</color>
+    <color name="btn_black_shadow">#ff211e1f</color>
+    <color name="btn_bottom_grey">#ff646e76</color>
+    <color name="scroll_text_selected">#ff288e00</color>
+    <color name="scroll_text_unselected">#ff4b4e50</color>
+    <color name="grey">#ff646e76</color>
+    <color name="grey_disable">#ffd8e1e7</color>
+    <color name="mid_grey">#ffcad0d4</color>
+    <color name="tab_text">#ff808885</color>
+    <color name="tab_text_selected">#ffffffff</color>
+    <color name="grey_main_view_text">#ff9b9b9b</color>
+    <color name="dark">#ff535353</color>
+    <color name="margin_bg_bottom_text">#ff333333</color>
+    <color name="dark_main_view_text">#ff1d1d1d</color>
+    <!-- <color name="black">#ff000000</color> -->
+    <color name="black_alpha_70">#4d000000</color>
+    <color name="list_title_text">#ff777777</color>
+    <color name="list_title_settings_text">#ffb4b6b7</color>
+    <color name="indexbar_letter_nomal">#ffb9bdc5</color>
+    <color name="indexbar_overlay">#ff1bb200</color>
+    <color name="guide_page_main_bg">#ffe9eef0</color>
+    <color name="guide_page_main_title_green">#ff1f9a00</color>
+    <color name="guide_page_main_title_gray">#ff647186</color>
+    <color name="guide_page_main_title">#ff854e18</color>
+    <color name="guide_page_main_title_one">#ffe88c19</color>
+    <color name="guide_page_main_content">#ff279a0e</color>
+    <color name="guide_page_main_content_one">#ff90949c</color>
+    <color name="guide_page_main_bg_one">#ff75c396</color>
+    <color name="guide_page_main_bg_two">#ffd3b471</color>
+    <color name="guide_page_main_bg_three">#ff71a6ce</color>
+    <color name="guide_page_main_text_one">#ff1f9a00</color>
+    <color name="guide_page_main_text_two">#ffc8883d</color>
+    <color name="guide_page_main_text_three">#ff5d9ed0</color>
+    <color name="guide_page_main_bottom_bg">#fff4f8f9</color>
+    <color name="auth_notice_main_content">#fffaf4f7</color>
+    <color name="result_white">#00ffffff</color>
+    <color name="shake_help_bg_normal">#fff2fff9</color>
+    <color name="shake_help_bg_press">#fffff7bd</color>
+    <color name="shake_help_border">#ff6db090</color>
+    <color name="green">#ff559817</color>
+    <color name="txt_label_black">#ff2e3d47</color>
+    <color name="red">#fff95d5d</color>
+    <color name="yellow">#ff996600</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent">#40000000</color>
+    <color name="password_edit_error">#fff65700</color>
+    <color name="password_edit_normal">#ff333f4b</color>
+    <color name="nettraffic_apklabel_color">#ff414142</color>
+    <color name="nettraffic_apkspeed_color">#ff98a6a3</color>
+    <color name="nettraffic_monthused_color">#ff8ea3b6</color>
+    <color name="menu_item_press_bg">#fff9f8ed</color>
+    <color name="menu_divider">#ffc6b221</color>
+    <color name="pop_nomal_textcolor">#ff7e5000</color>
+    <color name="send_mms_bg">#ffe6edf3</color>
+    <color name="protection_lock_link">#ff0000ff</color>
+    <color name="panel_btn_text">#ff56ae1e</color>
+    <color name="panel_btn_yellow_text">#ff513328</color>
+    <color name="block_list_empty">#ffbdcbce</color>
+    <color name="block_black_item_edit_hint">#ffe0e1e1</color>
+    <color name="block_black_item_edit_text">#ff899599</color>
+    <color name="block_black_locatin_hint">#ffb3b5b7</color>
+    <color name="block_reason">#ffff7b10</color>
+    <color name="block_reason_divider">#ffb2c4c9</color>
+    <color name="block_lottery_btn_text">#ff2f485b</color>
+    <color name="block_setting_miui_bg">#ffedf0f5</color>
+    <color name="block_setting_miui_declare">#ff414142</color>
+    <color name="block_setting_miui_item">#ff728999</color>
+    <color name="block_list_tips">#ff8a969a</color>
+    <color name="private_mms_address">#ff414142</color>
+    <color name="private_mms_content">#ff959595</color>
+    <color name="battery_view_green">#ff55ac1b</color>
+    <color name="battery_view_text_dark">#ff404042</color>
+    <color name="battery_view_time_color">#ff393941</color>
+    <color name="battery_recommend_bg">#ffd1dee2</color>
+    <color name="battery_view_text_light">#ff889194</color>
+    <color name="danger">#ffff7200</color>
+    <color name="warnning">#ff9e8026</color>
+    <color name="blue">#ff0881bf</color>
+    <color name="security_result">#ff777777</color>
+    <color name="security_panel_btn">#ff8d641c</color>
+    <color name="security_line">#ffd5c88d</color>
+    <color name="security_detail">#ff585858</color>
+    <color name="pop_box_normal">#ff585858</color>
+    <color name="marker_add_type_hint">#ffabbabe</color>
+    <color name="marker_count_normal">#ffa9a9a9</color>
+    <color name="marker_type_green">#ff40ac0e</color>
+    <color name="marker_type_normal">#ff414142</color>
+    <color name="marker_success_divider">#ffbed0d5</color>
+    <color name="marker_rank_name">#ffe7641a</color>
+    <color name="appmgr_main_divide">#ffdce2e6</color>
+    <color name="exam_weibo">#ff6a787b</color>
+    <color name="share_block_sms_body">#ff464646</color>
+    <color name="half_dark">#a0000000</color>
+    <color name="bar_code_bubble_text">#fffffd83</color>
+    <color name="bar_code_danger_top">#fffed000</color>
+    <color name="bar_code_danger_bottom">#ffb1b1b1</color>
+    <color name="bar_code_green">#ff7fff34</color>
+    <color name="bar_code_black_line">#ff3a3a3a</color>
+    <color name="bar_code_danger_text">#ffff8b24</color>
+    <color name="privacy_spinner_pressed">#ff2b2c32</color>
+    <color name="privacy_spinner_divider">#ff333638</color>
+    <color name="net_traffic_dialog_text">#ff687680</color>
+    <color name="net_traffic_dialog_text_shadow">#ffe6eff6</color>
+    <color name="net_traffic_sim_card_text">#ff99a0a6</color>
+    <color name="net_traffic_sim_card_bg">#fff8fcfe</color>
+    <color name="net_screenlock_totalcolor">#ff41a22e</color>
+    <color name="net_screenlock_line">#ff46b231</color>
+    <color name="net_screenlock_apk_label">#ff414142</color>
+    <color name="net_screenlock_mark">#ffe68237</color>
+    <color name="net_traffic_bank_title">#ff1eb400</color>
+    <color name="achievement_mark_helped_danger">#ffe11500</color>
+    <color name="achievement_mark_helped_safe">#ff939393</color>
+    <color name="achievement_holiday_bless">#ff414142</color>
+    <color name="achievement_holiday_guide_bless">#ffb0bfc8</color>
+    <color name="onekey_root_help_link">#ff5397c3</color>
+    <color name="onekey_root_item_bg">#fff8fcfe</color>
+    <color name="clear_result_dialog_divide1">#ff002062</color>
+    <color name="clear_result_dialog_divide2">#ff005bb5</color>
+    <color name="clear_result_dialog_item_info">#ff00ccff</color>
+    <color name="clear_result_dialog_item_score">#fffffc00</color>
+    <color name="clear_result_dialog_level_orange">#ffff7800</color>
+    <color name="clear_result_dialog_share_btn_text">#fffff000</color>
+    <color name="clear_result_dialog_share_btn_text_disable">#ff989fa4</color>
+    <color name="show_guide_green_line">#ff62be0d</color>
+    <color name="show_guide_white_line">#ffd9d9d9</color>
+    <color name="show_register_head_text">#ff808b92</color>
+    <color name="show_register_btn_green">#ff51a800</color>
+    <color name="show_register_btn_grey">#ffa3acb5</color>
+    <color name="show_register_btn_grey_pressed">#ff9098a1</color>
+    <color name="show_register_btn_disabled">#ffe8edef</color>
+    <color name="show_register_btn_pressed">#ff427d0b</color>
+    <color name="show_grey_disable">#ffbec7cc</color>
+    <color name="reality_show_signature">#ff98a1aa</color>
+    <color name="reality_show_using">#ffffeb44</color>
+    <color name="crop_mask">#60000000</color>
+    <color name="show_anti_eavesdrop">#ff7d8999</color>
+    <color name="pay_separated">#ffdee3e8</color>
+    <color name="datamanage_main_bg_color">#fff3f6f8</color>
+    <color name="datamanage_main_btn_title_color">#ff414142</color>
+    <color name="datamanage_main_btn_subtitle_color">#ff9ca5ae</color>
+    <color name="big_list_bg_color">#fff8f8f8</color>
+    <color name="title_bar">#ffffffff</color>
+    <color name="common_text_white">#ffffffff</color>
+    <color name="chatlist_item_tv_new_chat_num">#ffffffff</color>
+    <color name="common_text_dark">#ff000000</color>
+    <color name="list_bg_color">#ffdbdbdb</color>
+    <color name="real_black">#ff000000</color>
+    <color name="list_item_bg">#fff3f6f8</color>
+    <color name="list_item_title">#ff414142</color>
+    <color name="list_item_detail">#ff9ca5ae</color>
+    <color name="list_item_divider_line">#ffe4e9ed</color>
+    <color name="top_dialog_msg">#ff738087</color>
+    <color name="top_dialog_warning">#ffe85d32</color>
+    <color name="top_dialog_divider">#ffdfe2e7</color>
+    <color name="top_dialog_window">#ffffffff</color>
+    <color name="float_win_memory_high_text_color">#ffffffff</color>
+    <color name="float_win_memory_middle_text_color">#b3ffffff</color>
+    <color name="float_win_memory_low_text_color">#7fffffff</color>
+    <color name="float_window_item_bg_pressed">#ffe4ebea</color>
+    <color name="float_window_item_bg_normal">#00000000</color>
+    <color name="float_window_divider">#ffe1ecec</color>
+    <color name="privacy_step_text_next">#ff9daeb5</color>
+    <color name="privacy_forget_normal">#ff8b99ac</color>
+    <color name="privacy_forget_pressed">#ff414142</color>
+    <color name="privacy_pattern_number_pressed">#ff22a816</color>
+    <color name="privacy_pattern_number_normal">#ffc0c6d2</color>
+    <color name="privacy_float_white">#fffefefe</color>
+    <color name="protection_v1_experience">#ffff9000</color>
+    <color name="protection_v1_proving">#ff393d47</color>
+    <color name="protection_v2_help_index_bg">#ffedf0f5</color>
+    <color name="protection_v2_help_text">#ff414142</color>
+    <color name="protection_v2_help_click_text">#ff97a3ad</color>
+    <color name="protection_v2_help_line_green">#ff4eac40</color>
+    <color name="protection_v2_help_line_dark">#ffd9e0ea</color>
+    <color name="protection_v2_account_mine">#ff000000</color>
+    <color name="protection_v2_account">#ff9a9a9a</color>
+    <color name="protection_v2_phone_model">#ff3f4646</color>
+    <color name="protection_v2_status_text">#fff95800</color>
+    <color name="protection_v2_bubble_top">#ffafb3b5</color>
+    <color name="protection_v2_map_number">#ff393d47</color>
+    <color name="protection_v2_map_icon_text">#ff576363</color>
+    <color name="protection_v2_map_divider">#ffd9e3e8</color>
+    <color name="protection_v2_device_list_text">#ff97a3ad</color>
+    <color name="protection_v2_green">#ff079300</color>
+    <color name="protection_v2_black">#ff3f4646</color>
+    <color name="protection_v2_bandwidth_red">#fff37878</color>
+    <color name="protection_v2_grey">#ffa5adbb</color>
+    <color name="protection_v3_text_dart_light">#ff71777f</color>
+    <color name="protection_v3_text_dark">#ff242424</color>
+    <color name="protection_v3_green">#ff41bc22</color>
+    <color name="protection_v3_orange">#ffff7c08</color>
+    <color name="protection_v3_blue">#ff3f99cc</color>
+    <color name="protection_v3_divider">#ff5a5b5b</color>
+    <color name="protection_v3_lockscreen_button_press">#9933b5e5</color>
+<!--     <color name="orange">#fffd5900</color>
+ -->    <color name="shield_action_accept">#ff559817</color>
+    <color name="shield_action_prompt">#fff49d00</color>
+    <color name="shield_action_reject">#fff95d5d</color>
+    <color name="shield_info_panel_sel_bg">#fffaf9df</color>
+    <color name="shield_tab_item_shadow_color">#fff0f7fc</color>
+    <color name="shield_green">#ff52c21b</color>
+    <color name="shield_black">#ff49525c</color>
+    <color name="store_appmgr_group_header_text_color">#ff666666</color>
+    <color name="store_appmgr_item_primary_title_text_color">#ff4d4b4b</color>
+    <color name="store_appmgr_item_summary_title_text_color">#ff777777</color>
+    <color name="store_appmgr_item_devider">#ffd9d9d9</color>
+    <color name="text_color_dark">#ff6e777a</color>
+    <color name="text_color_mid_grey">#ffbbc3c5</color>
+    <color name="title_bar_bg_grey">#ffe2e9ea</color>
+    <color name="title_bar_digit_color_green">#ff4daa0f</color>
+    <color name="num_color_orange">#ffe66505</color>
+    <color name="num_color_green">#ff44a110</color>
+    <color name="listview_bg_grey">#fff0f4f5</color>
+    <color name="list_title_bg">#ffe2e9ea</color>
+    <color name="list_title_highlight">#ff4daa0f</color>
+    <color name="title_bar_tip_btn_text">#ff26a000</color>
+    <color name="security_level_is_trojan">#ffd74732</color>
+    <color name="security_level_is_danger">#ffd74732</color>
+    <color name="security_level_is_warning">#ffc48b1e</color>
+    <color name="security_level_not_legal">#ff6b6b6c</color>
+    <color name="security_level_legal_version">#ff119bea</color>
+    <color name="security_level_safe_use">#ff3fb000</color>
+    <color name="roottips_title_color">#ff36a518</color>
+    
+    
+    <color name="black">#000000</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="orange">#FFAA33</color>
+   <!--  <color name="green">#00DD00</color>
+    <color name="blue">#00BBFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="liteblue">#00BBFF</color>
+    <color name="red">#FF0000</color> -->
+    <color name="background">#5F9EA0</color>
+    
+    
+     <color name="text_black_color">#444444</color>
+    <!-- 皮肤颜色 -->
+<color name="bg_title">#38beb3</color>
+
+    <!-- 主界面下方点击色彩 -->
+    <color name="main_select">#2F4F4F</color>
+
+    <!-- app主题颜色 -->
+    <color name="app_theme">#38beb3</color>
+
+    <!-- 默认下方文字 -->
+    <color name="main_default_str">#7597B3</color>
+    <!-- 橘黄色 -->
+    <color name="croci">#FFE4C4</color>
+    <!-- 白色 -->
+    <color name="white_break">#D3DEE9</color>
+    <!-- 红色 -->
+
+    <!-- 圆型图像的颜色 -->
+    <color name="light">#FFEEEEEE</color>
+
+    <!-- 黑色 -->
+
+    <!-- slidingmenu线条颜色 -->
+    <color name="slidingmenuline">#757575</color>
+
+    <!-- 发心情背景色 -->
+    <color name="writemood">#E5E5E5</color>
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="select">#8B8682</color>
+    <!-- 蓝色 -->
+
+    <!-- 消息界面选择颜色 -->
+    <color name="message_color">#FFFFF0</color>
+
+    <!-- 上拉刷新，下拉加载 -->
+    <!-- <color name="black">#000000</color> -->
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+
+    <!-- 侧拉栏上面的字体的颜色 -->
+    <color name="slid_pitch_on">#00733C</color>
+    <color name="lightgray">#d3d3d3</color>
+
+    <!-- photo -->
+    <color name="photo_gray_text">#d5d5d5</color>
+    <color name="photo_blue_text">#1ebaf3</color>
+    <color name="photo_gray_bg">#e9ebec</color>
+    <color name="photo_blue_bg">#1ebaf3</color>
+    <color name="photo_line_color">#cacaca</color>
+    <color name="bg_body">#F2F1ED</color>
+
+    <!-- 用户密码输入框风格颜色 -->
+    <color name="line_target">#C2C3C7</color>
+<!-- 可触发文字的字体颜色 ，点击下去的颜色变化-->
+ <color name="darker_gray">#aaa</color>
+ <color name="page_title_color">#00733C</color>
+  
+ <color name="translucent_dk_grey">#88000000</color>
+ 
+  <!-- pop弹框 -->
+  <color name="trans">#00000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <!-- 下载进度条的颜色配置 -->
+    <color name="colorPrimary">#3F51B5</color>
+	<color name="colorPrimaryDark">#303F9F</color>
+	<color name="colorAccent">#FF4081</color>
+	
+	<!--  聊天界面的颜色 -->
+	<color name="btn_gray_normal">#c0c0c0</color>
+	
+	<color name="textColorPrimaryDark">#c0c0c0</color>
+	<color name="list_divider_line">#e7e7e7</color>  
+</resources>

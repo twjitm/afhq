@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="60dip" >
+
+    <TextView
+        android:id="@+id/people_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:text="姓名:"
+        android:textColor="@color/app_main_color"
+        android:textSize="22sp" />
+
+    <TextView
+         android:id="@+id/photo_num"
+         android:layout_below="@id/people_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="5dip"
+        android:text="号码:"
+        android:textColor="@color/app_main_color"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:id="@+id/import_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photo_num1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="1dp"
+        android:text="选择"
+        android:textColor="@color/app_main_color" />
+
+    <TextView
+        android:id="@+id/photo_num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/photo_num"
+        android:layout_alignBottom="@+id/photo_num"
+        android:layout_toRightOf="@+id/photo_num"
+        android:text="电话号码:"
+        android:textColor="@color/app_main_color"
+        android:textSize="18sp" />
+
+</RelativeLayout>

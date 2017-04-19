@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/miain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@color/app_main_color"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_scan_status"
+            android:layout_width="100dip"
+            android:layout_height="80dip"
+            android:gravity="center"
+            android:text="100%"
+            android:textColor="@android:color/white"
+            android:textSize="40dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/startinng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_scan_status"
+            android:text="安全"
+            android:textColor="@android:color/white" >
+        </TextView>
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tv_scan_status"
+            android:gravity="center"
+            android:text="已扫描"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/isVirus_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.4"
+            android:divider="#00000000" >
+        </ListView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="病毒木马程序:"
+                android:textColor="@color/app_main_color_danger"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/virus_app_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:text="5个"
+                android:textColor="@color/app_main_color_danger"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/virus_package_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:divider="#00000000" >
+        </ListView>
+
+        <Button
+            android:id="@+id/oneKeydo"
+            style="@style/logout_app_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:text="一键体检" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_lock_appicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app" />
+
+    <TextView
+        android:id="@+id/tv_lock_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="应用程序名称"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText
+        android:hint="请输入密码"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" >
+
+    </EditText>
+
+    <Button
+		android:onClick="click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入应用" />
+
+</LinearLayout>

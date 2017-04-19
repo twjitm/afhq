@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.itheima.mobileguard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="进程管理器设置"
+        android:textSize="24sp" />
+
+    <CheckBox 
+        android:id="@+id/cb_show_system"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示系统进程"
+        />
+    <CheckBox 
+        android:id="@+id/cb_lock_autokill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="锁屏清理进程"
+        />
+</LinearLayout>

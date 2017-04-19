@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">黑马小护卫</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sample_device_admin_description">我是设备的超级管理员。开启我之后就可以清除数据，远程锁屏，必须开启，不开启扣500块钱</string>
+    <string name="sample_device_admin">黑马卫士管理器</string>
+
+</resources>

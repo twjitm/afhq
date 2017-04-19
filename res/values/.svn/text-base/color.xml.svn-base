@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark">#22000000</color>
+    <color name="touming">@android:color/transparent</color>
+      <color name="textColorPrimary">#ffffffff</color>
+          <color name="textColorPrimaryDark">#ff000000</color>
+</resources>

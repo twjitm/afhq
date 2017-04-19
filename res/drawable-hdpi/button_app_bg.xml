@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 白色背景蓝色线按钮 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <gradient
+        android:angle="270.0"
+        android:centerColor="#00000000"
+        android:centerY="0.5"
+        android:endColor="#00000000"
+        android:startColor="#00000000" >
+    </gradient>
+
+    <corners android:radius="48dip" />
+    
+    <stroke 
+        android:width="1dip"
+        android:color="@color/app_main_color"/>
+
+    <padding
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp" />
+
+</shape>

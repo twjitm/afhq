@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.itheima.mobileguard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="设置中心"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- 自定义属性的写法 -->
+
+            <com.itheima.mobileguard.ui.SettingView
+                android:id="@+id/sv_autoupdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                itheima:desc="自动更新已经打开#自动更新已经关闭"
+                itheima:title="自动更新设置" >
+            </com.itheima.mobileguard.ui.SettingView>
+
+            <com.itheima.mobileguard.ui.SettingView
+                android:id="@+id/sv_blacknumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                itheima:desc="黑名单拦截已经打开#黑名单拦截已经关闭"
+                itheima:title="黑名单设置" >
+            </com.itheima.mobileguard.ui.SettingView>
+
+            <com.itheima.mobileguard.ui.SettingView
+                android:id="@+id/sv_showaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                itheima:desc="归属地显示已经打开#归属地显示已经关闭"
+                itheima:title="电话归属地设置" >
+            </com.itheima.mobileguard.ui.SettingView>
+
+            <com.itheima.mobileguard.ui.SettingView
+                android:id="@+id/sv_watchdog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                itheima:desc="看门狗已经打开#看门狗已经关闭"
+                itheima:title="程序锁看门狗设置" >
+            </com.itheima.mobileguard.ui.SettingView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dip"
+                android:background="@drawable/list_selector"
+                android:clickable="true"
+                android:onClick="changeBgStyle" >
+
+                <TextView
+                    android:id="@+id/tv_change_titlestyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="5dip"
+                    android:text="归属地提示框风格"
+                    android:textColor="#000000"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:id="@+id/tv_title_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_change_titlestyle"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginTop="2dip"
+                    android:text="半透明"
+                    android:textColor="#88000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dip"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:src="@drawable/jiantou_selector" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dip"
+                    android:layout_below="@+id/tv_title_style"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/list_devider" >
+                </View>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
