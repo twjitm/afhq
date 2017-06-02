@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:background="@color/app_main_color"
+        android:gravity="center"
+        android:text="进入密码"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_init_psd"
+        style="@style/login_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密保密码"
+        android:inputType="phone" />
+
+    <LinearLayout
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/initpsd_ok"
+            style="@style/login_edit_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/initpsd_cancel"
+            style="@style/login_edit_text"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="退出" />
+    </LinearLayout>
+
+</LinearLayout>

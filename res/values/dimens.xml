@@ -3,9 +3,6 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- 侧拉栏目的宽度配置 -->
-    <dimen name="slenslidingMenu">80dp</dimen>
-    <dimen name="show_down">5dp</dimen>
     <!-- 头像照片的大小 -->
     <dimen name="usercenter_photo_width">85dp</dimen>
     <dimen name="muen_photo_width">65dp</dimen>

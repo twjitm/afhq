@@ -67,6 +67,8 @@
         </activity>
         <activity android:name="com.example.afhq.activity.TrafficManagerActivity" >
         </activity>
+        <activity android:name="com.example.afhq.activity.TasksActivity"></activity>
+         <activity android:name="com.example.afhq.activity.LockAppActivity" ></activity>
         <!-- 后台服务注册 -->
         <service android:name="com.example.afhq.service.CallSmsSafeService" >
         </service>

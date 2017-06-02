@@ -10,6 +10,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 
 import com.example.afhq.db.ApplockDBOpenHelper;
+import com.example.afhq.enums.AppLockType;
 
 public class ApplockDao {
 	private ApplockDBOpenHelper helper;
@@ -52,6 +53,18 @@ public class ApplockDao {
 		return packnames;
 	}
 	
+	public String  getStateBypackageName(String packageName){
+		SQLiteDatabase db = helper.getReadableDatabase();
+		Cursor cursor = db.query("info", new String[]{"state"}, "packname=?", new String[]{packageName}, null, null, null);
+		while(cursor.moveToNext()){
+			return cursor.getString(0);
+		}
+		cursor.close();
+		db.close();
+		return null;
+	}
+	
+	
 	/**
 	 * 添加一个包名到程序锁数据库
 	 * @param packname
@@ -60,6 +73,7 @@ public class ApplockDao {
 		SQLiteDatabase db = helper.getWritableDatabase();
 		ContentValues values = new ContentValues();
 		values.put("packname", packname);
+		values.put("state", AppLockType.UNLOCK);
 		db.insert("info", null, values);
 		db.close();
 		//通知内容观察者数据变化了。
@@ -77,5 +91,22 @@ public class ApplockDao {
 		//通知内容观察者数据变化了。
 		context.getContentResolver().notifyChange(Uri.parse("content://com.itheima.mobileguard.applock"), null);
 	}
+	
+	/**
+	 * 加锁或者解锁软件
+	 * @param packageName
+	 * @param state 0加密，1解密
+	 */
+	public void lockapp(String packageName,Integer state){
+		
+		SQLiteDatabase db = helper.getWritableDatabase();
+		ContentValues values = new ContentValues();
+		System.out.println("更新状态："+packageName+"------------->"+state);
+		values.put("state", state);
+		db.update("info", values, "packname=?", new String[]{packageName});
+		context.getContentResolver().notifyChange(Uri.parse("content://com.itheima.mobileguard.applock"), null);
+	}
+	
+
 	
 }

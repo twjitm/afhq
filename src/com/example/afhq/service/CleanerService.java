@@ -26,7 +26,11 @@ import android.widget.Toast;
 
 import com.example.afhq.R;
 import com.example.afhq.entity.CacheListItem;
-
+/**
+ * 垃圾服务进程
+ * @author 文江
+ *
+ */
 public class CleanerService extends Service {
 
 	 public static final String ACTION_CLEAN_AND_EXIT = "com.example.afhq.cache.cleaner.CLEAN_AND_EXIT";

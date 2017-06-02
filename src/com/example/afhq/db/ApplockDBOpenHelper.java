@@ -19,7 +19,7 @@ public class ApplockDBOpenHelper extends SQLiteOpenHelper {
 	// 数据库表结构的初始化
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		db.execSQL("create table info (_id integer primary key autoincrement,packname varchar(20)) ");
+		db.execSQL("create table info (_id integer primary key autoincrement,packname varchar(20),state varchar(20))");
 	}
 
 	@Override

@@ -2,36 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical" 
+    android:background="@android:color/white">
  <include layout="@layout/titlebar"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/tv_unlock"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_left_pressed"
-            android:gravity="center"
-            android:text="未加锁"
-            android:textColor="#ffffff" />
-
-        <TextView
-            android:id="@+id/tv_locked"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/tab_right_default"
-            android:gravity="center"
-            android:text="已加锁"
-            android:textColor="#ffffff" />
-    </LinearLayout>
   <!--   帧布局，容器，用于放置fragment -->
-    <FrameLayout
-        android:id="@+id/fl_container"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-    </FrameLayout>
+  <ListView
+            android:id="@+id/lockapp_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:clipToPadding="false"
+            android:divider="#00000000"
+            android:dividerHeight="4dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:listSelector="@android:color/transparent"
+            android:padding="12dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none" >
+        </ListView>
 </LinearLayout>

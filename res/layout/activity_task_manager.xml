@@ -1,101 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    xmlns:app="http://schemas.android.com/apk/res/com.example.afhq"
+    android:orientation="vertical"
+      android:background="@drawable/card_background_white"
+    >
 
-    <TextView
+    <include 
+        layout="@layout/titlebar"/>
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="60dip"
-        android:background="#8866ff00"
-        android:gravity="center"
-        android:text="进程管理器"
-        android:textSize="24sp" />
+        android:layout_height="0dip"
+        android:layout_weight="0.4"
+        android:background="@color/app_main_color" >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <TextView
-            android:id="@+id/tv_running_prcesscount"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="运行中进程："
-            android:textSize="14sp" />
+            android:layout_height="180dip"
+            android:layout_centerInParent="true" >
 
-        <TextView
-            android:id="@+id/tv_ram_info"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:text="内存可用："
-            android:textSize="14sp" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:layout_weight="290"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-
-        <LinearLayout
-            android:id="@+id/ll_loading"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:visibility="invisible" >
-
-            <ProgressBar
+            <RelativeLayout
+                android:id="@+id/task_left"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="180dip"
+                android:layout_centerVertical="true" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="正在加载进程信息..." />
-        </LinearLayout>
+                <com.example.afhq.widget.ArcProgress
+                    android:id="@+id/task_arc_store"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    app:arc_unfinished_color="@android:color/white"
+                    custom:arc_bottom_text="可清理"
+                    custom:arc_bottom_text_size="18dip"
+                    custom:arc_progress="10"
+                    custom:arc_stroke_width="8dip"
+                    custom:arc_text_color="@android:color/white"
+                    custom:arc_text_size="32dip" />
+
+                <TextView
+                    android:id="@+id/task_capacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="55dip"
+                    android:text="20/30"
+                    android:textColor="@android:color/white"
+                    android:textSize="12dip" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
 
         <ListView
-            android:id="@+id/lv_taskmanger"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:fastScrollEnabled="true" >
+            android:id="@+id/task_mangerlist"
+             android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:clipToPadding="false"
+            android:divider="#00000000"
+            android:dividerHeight="4dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:fitsSystemWindows="true"
+            android:focusable="true"
+            android:listSelector="@android:color/transparent"
+            android:padding="12dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none" >
         </ListView>
-    </FrameLayout>
-
+</LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
 
         <Button
+            android:id="@+id/task_kill"
             android:onClick="killProcess"
-            android:background="@drawable/button_selector"
+           style="@style/logout_app_text"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:text="清理" />
+            android:text="一键结束进程" />
 
-        <Button
-            android:onClick="selectAll"
-            android:background="@drawable/button_selector"
-            android:layout_width="0dip"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:text="全选" />
 
-        <Button
-            android:onClick="selectOpposite"
-            android:background="@drawable/button_selector"
-            android:layout_width="0dip"
-            android:layout_height="fill_parent"
-            android:layout_weight="1"
-            android:text="反选" />
 
         <Button
             android:onClick="openSetting"
-            android:background="@drawable/button_selector"
+           style="@style/logout_app_text"
             android:layout_width="0dip"
             android:layout_height="fill_parent"
             android:layout_weight="1"

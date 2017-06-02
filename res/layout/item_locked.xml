@@ -2,13 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
+    android:background="@android:color/white"
     android:gravity="center_vertical"
-    android:orientation="horizontal" >
+    android:orientation="horizontal"
+     android:padding="10dp">
 
     <ImageView
+         android:id="@+id/iv_app_icon"
         android:paddingTop="5dip"
         android:paddingBottom="5dip"
-        android:id="@+id/iv_app_icon"
         android:layout_width="45dip"
         android:layout_height="45dip"
         android:src="@drawable/app" />
@@ -36,7 +38,6 @@
                 android:textSize="20sp"
                 android:textColor="#000000"
                 android:gravity="center_vertical"
-                android:paddingLeft="5.0dip"
                 android:text="标题" />
 
             <ImageView
@@ -47,8 +48,7 @@
                 android:layout_height="30dip"
                 android:layout_gravity="center_vertical"
                 android:gravity="center_vertical"
-                android:paddingRight="5.0dip"
-               android:src="@drawable/unlock" />
+               android:background="@drawable/unlock" />
         </LinearLayout>
     </LinearLayout>
 

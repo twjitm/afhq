@@ -49,6 +49,11 @@ public class AppInfo {
 	private String packname;
 	private int uid;
 
+	/**
+	 * ×´Ì¬ 0¼ÓËø£¬1  Î´¼ÓËø
+	 */
+	private Integer state;
+	
 	public int getUid() {
 		return uid;
 	}
@@ -103,6 +108,15 @@ public class AppInfo {
 
 	public void setPackname(String packname) {
 		this.packname = packname;
+	}
+	
+
+	public Integer getState() {
+		return state;
+	}
+
+	public void setState(Integer state) {
+		this.state = state;
 	}
 
 	@Override

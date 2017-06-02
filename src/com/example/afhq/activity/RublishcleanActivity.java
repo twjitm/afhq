@@ -45,7 +45,11 @@ import com.example.afhq.widget.ArcProgress;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
-
+/**
+ * É¨ÃèÀ¬»ø
+ * @author ÎÄ½­
+ *
+ */
 public class RublishcleanActivity extends Activity implements OnActionListener {
 	protected static final int SCANING = 5;
 
@@ -204,7 +208,6 @@ public class RublishcleanActivity extends Activity implements OnActionListener {
 		if (isProgressBarVisible()) {
 			showProgressBar(false);
 		}
-
 		if (!RublishcleanActivity.this.isFinishing()) {
 			 //showDialogLoading();
 		}

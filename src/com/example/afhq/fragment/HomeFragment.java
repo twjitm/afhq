@@ -8,8 +8,10 @@ import android.widget.Toast;
 
 import com.example.afhq.R;
 import com.example.afhq.activity.AntiVirusActivity;
+import com.example.afhq.activity.LockAppActivity;
 import com.example.afhq.activity.MessageInterceptActivity;
 import com.example.afhq.activity.RublishcleanActivity;
+import com.example.afhq.activity.TasksActivity;
 import com.example.afhq.activity.TrafficManagerActivity;
 import com.example.afhq.base.BaseFragment;
 import com.lidroid.xutils.ViewUtils;
@@ -24,6 +26,10 @@ public class HomeFragment extends BaseFragment {
 	private LinearLayout traffice_manager;//流量监控
 	@ViewInject(R.id.ll_rubbish)
 	private LinearLayout ll_rubbish;
+	@ViewInject(R.id.task_insert_layer)//软件管理
+	private LinearLayout task_insert_layer;
+	@ViewInject(R.id.main_layout_applock)
+	private LinearLayout main_layout_applock;
 	
 	@Override
 	public void initData() {
@@ -55,6 +61,9 @@ public class HomeFragment extends BaseFragment {
 				
 			}
 		});
+		/**
+		 * 
+		 */
 		ll_rubbish.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -64,6 +73,28 @@ public class HomeFragment extends BaseFragment {
 				startActivity(intent);				
 			}
 		});
+		
+		
+		task_insert_layer.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent();
+				intent.setClass(context, TasksActivity.class);
+				startActivity(intent);						
+			}
+		});
+		
+		main_layout_applock.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent=new Intent();
+				intent.setClass(context, LockAppActivity.class);
+				startActivity(intent);					
+			}
+		});
+		
 		
 	}
 	@Override

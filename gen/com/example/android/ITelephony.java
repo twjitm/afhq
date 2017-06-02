@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: G:\\workspace\\afhq\\src\\com\\example\\android\\ITelephony.aidl
+ * Original file: G:\\git\\afhq\\src\\com\\example\\android\\ITelephony.aidl
  */
 package com.example.android;
 /**

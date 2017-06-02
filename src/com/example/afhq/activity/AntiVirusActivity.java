@@ -193,6 +193,13 @@ public class AntiVirusActivity extends Activity {
 		oneKeydoSomething();
 	}
 	
+	public static void main(String[] args) {
+		//b7d7ce745fe049a4d3f33e662234ad90
+		AntiVirusDao a=new AntiVirusDao();
+		a.add("腾讯电iiii脑管家", "b7d7ce745fe049a4d3f33e662234ad90");
+		
+	}
+	
 	
 
 	private void scanVirus() {
@@ -215,7 +222,7 @@ public class AntiVirusActivity extends Activity {
 					String apkpath = info.applicationInfo.sourceDir;
 					// 检查获取这个文件的 特征码
 					String md5info = Md5Utils.getFileMd5(apkpath);
-
+                    System.out.println(info.packageName+"md5info="+md5info);
 					String result = AntiVirusDao.checkVirus(md5info);//获取病毒库数据
 					msg = Message.obtain();
 					msg.what = SCANNING;
@@ -227,6 +234,7 @@ public class AntiVirusActivity extends Activity {
 						scanInfo.isVirus = true;
 					}
 					System.out.println(info.packageName);
+					
 					scanInfo.packname = info.packageName;
 					scanInfo.appname = info.applicationInfo.loadLabel(pm).toString();
 					scanInfo.process++;

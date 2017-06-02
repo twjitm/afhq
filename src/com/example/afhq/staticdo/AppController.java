@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
@@ -146,12 +147,15 @@ public class AppController {
      */
     public static boolean startApp(String packageName,String activityName){
         boolean isSuccess = false;
-        String cmd = "am start -n " + packageName + "/" + activityName + " \n";
+     //  packageName + "/" + activityName + " \n";
+       String cmd = "am start -n " + new  ComponentName(packageName,activityName).flattenToShortString();
+        System.out.println(cmd);
         Process process = null;
         try {
            process = Runtime.getRuntime().exec(cmd);
            int value = process.waitFor();  
            System.out.println(value);
+           
            return returnResult(value);
         } catch (Exception e) {
           e.printStackTrace();

@@ -4,7 +4,6 @@
     <string name="app_name">android手机防火墙</string>
     <string name="menu_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="sample_device_admin_description">我是设备的超级管理员。开启我之后就可以清除数据，远程锁屏，必须开启，不开启扣500块钱</string>
     <string name="sample_device_admin">黑马卫士管理器</string>
     <string name="cleaned">清理</string>
      <string name="scanning">扫描中…</string>

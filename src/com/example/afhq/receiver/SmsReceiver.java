@@ -42,7 +42,7 @@ public class SmsReceiver extends BroadcastReceiver {
 				abortBroadcast();
 			}else if("#*alarm*#".equals(body)){
 				Log.i(TAG,"≤•∑≈±®æØ“Ù¿÷.");
-				MediaPlayer player = MediaPlayer.create(context, R.raw.ylzs);
+				MediaPlayer player = MediaPlayer.create(context, null);
 				player.setVolume(1.0f, 1.0f);
 				player.start();
 				abortBroadcast();

@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: G:\\workspace\\afhq\\src\\android\\content\\pm\\IPackageStatsObserver.aidl
+ * Original file: G:\\git\\afhq\\src\\android\\content\\pm\\IPackageStatsObserver.aidl
  */
 package android.content.pm;
 /**

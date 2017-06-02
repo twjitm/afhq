@@ -16,7 +16,11 @@ import android.content.SharedPreferences.Editor;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.util.Log;
-
+/**
+ * iptables中的操作
+ * @author 文江
+ *
+ */
 public class IPtablesApi {
 	public static final String VERSION = "1.3.6";  
     public static final String PREFS_NAME           = "DroidWallPrefs";  
