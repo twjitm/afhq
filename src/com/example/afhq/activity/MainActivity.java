@@ -25,7 +25,7 @@ import com.example.afhq.widget.RoundProgressBar;
 
 public class MainActivity extends FragmentActivity {
 	private RoundProgressBar mRoundProgressBar5;
-	private int progress = 0;
+	private int progress = 100;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -54,8 +54,8 @@ public class MainActivity extends FragmentActivity {
 
 					@Override
 					public void run() {
-						while(progress <= 100){
-							progress += 3;
+						while(progress >= 78){
+							progress -= 3;
 							System.out.println(progress);
 							mRoundProgressBar5.setProgress(progress);
 							try {
@@ -79,8 +79,8 @@ public class MainActivity extends FragmentActivity {
 				new Thread(new Runnable() {
 					@Override
 					public void run() {
-						while(progress <= 100){
-							progress += 3;
+						while(progress >= 78){
+							progress -= 3;
 							System.out.println(progress);		
 							mRoundProgressBar5.setProgress(progress);
 							try {
@@ -89,6 +89,8 @@ public class MainActivity extends FragmentActivity {
 								e.printStackTrace();
 							}
 						}
+						((Button)findViewById(R.id.button1)).setText("Ìå¼ìÍê³É");
+						
 					}
 				}).start();
 			}
