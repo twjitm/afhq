@@ -8,8 +8,9 @@
 ### 木马查杀
 木马查杀主要是通过病毒数据库以及linux对端口的监控实现漏洞扫描以及木马扫描，通过文件类型数据库管理文件是否为绑定文件。
 <div  align="center">    
-<img src="./image/Screenshot_2017-05-04-23-05-19-69.png" />
+<img src="./image/Screenshot_2017-05-04-23-05-19-69.png" width = "300" height = "200" alt="木马查杀" align=center />
 </div>
+
 ### 网络监控
 采用iptable的linux的规则，配置规则，使得在wifi情况下可以使用网络，在GPRS情况下可以不使用网络。
 ### 短信拦截
