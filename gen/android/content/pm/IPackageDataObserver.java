@@ -1,3 +1,5 @@
+/*___Generated_by_IDEA___*/
+
 /*
  * This file is auto-generated.  DO NOT MODIFY.
  * Original file: G:\\git\\afhq\\src\\android\\content\\pm\\IPackageDataObserver.aidl
